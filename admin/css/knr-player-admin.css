@@ -1,0 +1,279 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+ body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+	font-size: 1em;
+}
+
+.ui-draggable, .ui-droppable {
+	background-position: top;
+}
+
+.knr_player-nav {
+  margin: 0;
+  padding: 0;
+}
+.knr_player-nav li {
+    display: inline-block;
+}
+.knr_player-nav li a {
+    display: block;
+    padding: 10px 15px;
+    background: #f7f7f7;
+    border-radius: 5px;
+    color:#000;
+    text-decoration: none;
+}
+.knr_player-nav li a:hover,
+.knr_player-nav li.ui-state-active>a {
+    background: #0073aa;
+    color:#fff;
+}
+.clear_knr{
+  clear: both;
+}
+.pull-left{
+  float: left;
+}
+.pull-right{
+  float: right;
+}
+.knr_player-nav.pull-left li {
+  margin-right: 10px;
+}
+.knr_player-nav.pull-right li {
+  margin-left: 10px;
+}
+#knr_player-tabs{
+  margin-top: 20px;
+}
+.knr_button{
+	padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.knr_primary{
+    background: #0073aa;
+    color: #fff;
+}
+.knr_info{
+    background: #9c3535;
+    color: #fff;
+}
+
+.knr_icon_calcel {
+    color: #fff;
+    background: #E91E63;
+    font-size: 12px;
+    padding: 1px 2px;
+    margin: 1px 5px;
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px #0073aa;
+}
+.knr_pointer{
+  cursor:pointer;
+  margin-left: 5px;
+}
+#knr_open_modal {
+    background: #d30c5c;
+    color: #fff;
+    cursor:pointer;
+}
+.knr_open_modal_update {
+    background: #3F51B5;
+    color: #fff;
+    cursor:pointer;
+}
+
+
+.knr_warning{
+  background: #fe9900;
+  color: #fff;
+}
+.knr_primary:hover{
+	background: #f7f7f7;
+  color:#000; 
+}
+.knr_open_modal_update:hover,
+#knr_open_modal:hover,
+.knr_icon_calcel:hover,
+.knr_warning:hover,
+.knr_info:hover{
+  background: #0073aa;
+}
+
+.knr_player-box {
+    background: #fff;
+    border-left: 4px solid #fff;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    margin: 5px 0 3px;
+    padding: 12px 12px;
+}
+
+
+/* HIDE RADIO */
+.knr_checkbox { 
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* IMAGE STYLES */
+.knr_checkbox + img {
+  cursor: pointer;
+}
+
+/* CHECKED STYLES */
+.knr_checkbox:checked + img {
+  outline: 2px solid #f00;
+}
+
+.mr-30{
+  margin-right: 30px;
+}
+
+
+/*Knr player audio list*/
+ul#knr_list_mp3 li{
+  display: flex;
+  align-items: center;
+}
+
+
+/*modal*/
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+/*Range slider*/
+input[type=range].knr-range-slide {
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 100%;
+}
+input[type=range].knr-range-slide:focus {
+  outline: none;
+}
+input[type=range].knr-range-slide::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 12.8px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  background: #ac51b5;
+  border-radius: 25px;
+  border: 0px solid #000101;
+}
+input[type=range].knr-range-slide::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 0px solid #000000;
+  height: 20px;
+  width: 39px;
+  border-radius: 7px;
+  background: #65001c;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -3.6px;
+}
+input[type=range].knr-range-slide:focus::-webkit-slider-runnable-track {
+  background: #ac51b5;
+}
+input[type=range].knr-range-slide::-moz-range-track {
+  width: 100%;
+  height: 12.8px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  background: #ac51b5;
+  border-radius: 25px;
+  border: 0px solid #000101;
+}
+input[type=range].knr-range-slide::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 0px solid #000000;
+  height: 20px;
+  width: 39px;
+  border-radius: 7px;
+  background: #65001c;
+  cursor: pointer;
+}
+input[type=range].knr-range-slide::-ms-track {
+  width: 100%;
+  height: 12.8px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  border-width: 39px 0;
+  color: transparent;
+}
+input[type=range].knr-range-slide::-ms-fill-lower {
+  background: #ac51b5;
+  border: 0px solid #000101;
+  border-radius: 50px;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+}
+input[type=range].knr-range-slide::-ms-fill-upper {
+  background: #ac51b5;
+  border: 0px solid #000101;
+  border-radius: 50px;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+}
+input[type=range].knr-range-slide::-ms-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 0px solid #000000;
+  height: 20px;
+  width: 39px;
+  border-radius: 7px;
+  background: #65001c;
+  cursor: pointer;
+}
+input[type=range].knr-range-slide:focus::-ms-fill-lower {
+  background: #ac51b5;
+}
+input[type=range].knr-range-slide:focus::-ms-fill-upper {
+  background: #ac51b5;
+}
